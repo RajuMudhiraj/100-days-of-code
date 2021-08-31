@@ -1,5 +1,3 @@
-# test h1
+# Welcome to 100-days-of-code'
 
-- test ul
-
-1. test ol
+** I created this repo to push whatever i learn for 100 continuous days **
