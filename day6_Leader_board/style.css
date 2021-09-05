@@ -1,0 +1,175 @@
+
+ body{
+    background-color:rgb(155, 179, 170);
+    margin:5px;
+}
+
+#cont-flex{
+    display:flex;
+    flex-direction: row;            
+}
+
+#input {
+    width:25%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(187, 187, 104);
+    padding:20px;
+}
+
+#output {
+    width:75%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(104, 187, 122);
+    padding:20px;
+}
+
+#min-max {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+
+}
+#min-display {
+    background-color: rgb(255,0,0);
+    padding:10px;
+    border:1px solid black;
+ 
+    min-width: 100px;
+    height: 50px;
+}
+
+#max-display {
+    background-color: rgb(0,255,0);
+    padding:10px;
+    border: 1px solid black;
+  
+    min-width: 100px;
+    height:50px;
+}
+#heading{
+    grid-area:heading;
+    height:10px;
+}
+
+#current_score{
+    grid-area: score-input;
+    background-color: gray;
+
+    padding:10px;
+    border: 1px solid black;
+    height: 50px;
+           
+}
+
+#num1{
+    grid-area: num1;
+    background-color: rgb(38, 92, 38);
+    padding:10px;
+    border: 1px solid black;
+}
+
+#num2{
+    grid-area: num2;
+    background-color: rgb(235, 105, 53);
+    padding:10px;
+    border: 1px solid black;
+}
+
+#num3{
+    grid-area: num3;
+    background-color: rgb(38, 92, 38);
+    padding:10px;
+    border: 1px solid black;
+}
+
+#num4{
+    grid-area:  num4;
+    background-color: rgb(235, 105, 53);
+    padding:10px;
+    border: 1px solid black;
+}
+
+#num5{
+    grid-area: num5;
+    background-color: rgb(235, 105, 53);
+    padding:10px;
+    border: 1px solid black;
+}
+
+#num6{
+    grid-area: num6;
+    background-color: rgb(235, 105, 53);
+    padding:10px;
+    border: 1px solid black;
+}
+
+#num7{
+    grid-area: num7;
+    background-color: rgb(38, 92, 38);
+    padding:10px;
+    border: 1px solid black;
+}
+
+#num8{
+    grid-area: num8;
+    background-color: rgb(235, 105, 53);
+    padding:10px;
+    border: 1px solid black;
+}
+
+#num9{
+    grid-area: num9;
+    background-color: rgb(38, 92, 38);
+    padding:10px;
+    border: 1px solid black;
+} 
+
+#num0{
+    grid-area:  num0;
+    background-color: rgb(119, 73, 156);
+    padding:10px;
+    border: 1px solid black;
+}
+#name {
+    grid-area: name;
+    text-align: center;
+
+}  
+
+#enter{
+    grid-area: enter;
+    background-color: rgb(0, 0, 0);
+    padding:10px;
+    border: 1px solid black;
+    color:rgb(255,255,255)
+}   
+.button:hover {
+    color: white;
+  
+}
+  
+
+
+#keypad {
+    display: grid;
+    grid-template-areas:"heading heading heading"
+                        "score-input score-input score-input"
+                        "num1 num2 num3"
+                        "num4 num5 num6"
+                        "num7 num8 num9"
+                        ". num0 ."
+                        "name name name"
+                        "enter enter enter" ;
+    grid-gap: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
