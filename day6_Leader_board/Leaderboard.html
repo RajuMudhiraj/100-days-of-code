@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cont-flex">
+        <div id="input">
+            <div id="min-max">
+                <div id="min">
+                    <div id ="min-display"> </div>
+                    <div> MIN </div>
+                </div>
+
+                <div id="max">
+                    <div id="max-display"> </div>
+                    <div> MAX </div>
+                </div>
+            </div>
+
+            <div id="keypad">
+                <h1 id="heading"> Score </h1>
+                <div id="current_score"> # </div>
+                <div onclick="button_clicked(1)" class="button" id="num1"> 1 </div>
+                <div onclick="button_clicked(2)" class="button" id="num2"> 2 </div>
+                <div onclick="button_clicked(3)" class="button" id="num3"> 3 </div>
+                <div onclick="button_clicked(4)" class="button" id="num4"> 4 </div>
+                <div onclick="button_clicked(5)" class="button" id="num5"> 5 </div>
+                <div onclick="button_clicked(6)" class="button" id="num6"> 6 </div>
+                <div onclick="button_clicked(7)" class="button" id="num7"> 7 </div>
+                <div onclick="button_clicked(8)" class="button" id="num8"> 8 </div>
+                <div onclick="button_clicked(9)" class="button" id="num9"> 9 </div>
+                <div onclick="button_clicked(0)" class="button" id="num0"> 0 </div>
+                <input type="text" id="name" placeholder="Enter User Name">
+                <div onclick="enter_clicked()" class="button" id="enter"> Submit Score </div>
+            </div>
+            
+
+        </div>
+
+        <div id="output">
+            <h1 class="center"> Leader Board</h1>
+            <p> Sl_No  &nbsp;&nbsp;&nbsp;&nbsp; Name &nbsp;&nbsp;&nbsp;&nbsp;   Score</p> <hr>
+        </div>
+    </div>
+
+
+    <script src='script.js'></script>
+</body>
+</html>
