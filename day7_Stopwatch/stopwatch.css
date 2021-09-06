@@ -1,0 +1,28 @@
+/* (A) CONTAINER */
+#stopwatch {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 320px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+/* (B) TIME */
+#sw-time {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* (C) BUTTONS */
+#sw-rst, #sw-go {
+  box-sizing: border-box;
+  width: 50%;
+  cursor: pointer;
+  padding: 20px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+}
