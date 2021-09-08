@@ -1,3 +1,5 @@
+// link to hackerrank problem ------> https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem
+
 let inputData = "3\nsam 99912222\ntom 11122222\nharry 12299933\nsam\nedward\nharry"
 
 function processData(input) {
