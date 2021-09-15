@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+}
+*{
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  background-color: hsl(230, 50%, 80%);
+}
