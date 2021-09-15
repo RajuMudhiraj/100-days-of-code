@@ -1,0 +1,130 @@
+body{
+    margin-top:50px;
+}
+
+#display{
+    width:auto;
+    margin:auto;
+    border:1px solid black;
+    padding:10px;
+    
+    height:100px;
+    background-color: bisque;    
+}
+
+#keyQ{
+    grid-area: keyQ;
+} 
+#keyW{
+    grid-area: keyW;
+}
+#keyE{
+    grid-area: keyE;
+}
+#keyR{
+    grid-area: keyR;
+}
+#keyT{
+    grid-area: keyT;
+}
+#keyY{
+    grid-area: keyY;
+}
+#keyU{
+    grid-area: keyU;
+}
+#keyI{
+    grid-area: keyI;
+}
+#keyO{
+    grid-area: keyO;
+}
+#keyP{
+    grid-area: keyP;
+}
+#keyA{
+    grid-area: keyA;
+}
+#keyS{
+    grid-area: keyS;
+}
+#keyD{
+    grid-area: keyD;
+}
+#keyF{
+    grid-area: keyF;
+}
+#keyG{
+    grid-area: keyG;
+}
+#keyH{
+    grid-area: keyH;
+}
+#keyJ{
+    grid-area: keyJ;
+}
+#keyK{
+    grid-area: keyK;
+}
+#keyL{
+    grid-area: keyL;
+}
+#keyZ{
+    grid-area: keyZ;
+}
+#keyX{
+    grid-area: keyX;
+}
+#keyC{
+    grid-area: keyC;
+}
+#keyV{
+    grid-area: keyV;
+}
+#keyB{
+    grid-area: keyB;
+}
+#keyN{
+    grid-area: keyN;
+}
+#keyM{
+    grid-area: keyM;
+}
+#keyCom{
+    grid-area: keyCom;
+}
+#keySpace{
+    grid-area: keySpace;
+    color:black;
+}
+
+
+.button{
+    background-color: black;
+    color:white;
+    text-align:center;
+    height:45px;
+    min-width:45px;
+}
+.button:hover{
+    background-color: rgb(92, 82, 82);
+    color:black;
+    
+}
+
+
+#container {
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-gap: 10px;
+    grid-template-areas:"display display display display display display display display display display display display display display display display display display display display display display"
+                        "key1    key1    key2    key2    key3    key3    key4    key4    key5    key5    key6    key6    key7    key7    key8    key8    key9    key9    key0    key0    keyDel  keyDel "
+                        ".       keyQ    keyQ    keyW    keyW    keyE    keyE    keyR    keyR    keyT    keyT    keyY    keyY    keyU    keyU    keyI    keyI    keyO    keyO    keyP    keyP    .      "
+                        ".       .       keyA    keyA    keyS    keyS    keyD    keyD    keyF    keyF    keyG    keyG    keyH    keyH    keyJ    keyJ    keyK    keyK    keyL    keyL    .       .      "
+                        ".       .       .       keyZ    keyZ    keyX    keyX    keyC    keyC    keyV    keyV    keyB    keyB    keyN    keyN    keyM    keyM    keyCom  keyCom  .       .       .      "
+                        ".       .       .       .       .       keySpace keySpace keySpace keySpace keySpace keySpace keySpace keySpace keySpace keySpace keySpace keySpace   .       .       .       .       .      "
+                        
+}
+
+
