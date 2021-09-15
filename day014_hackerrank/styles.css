@@ -1,9 +1,0 @@
-body {
-  font-family: sans-serif;
-}
-h2{
-  text-align: center;
-}
-#displayBValue, #displayResult{
-  background-color: hsl(220, 30%,60%);
-}
