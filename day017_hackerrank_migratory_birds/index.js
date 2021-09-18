@@ -1,3 +1,6 @@
+//link to hacherrank
+//https://www.hackerrank.com/challenges/migratory-birds
+
 function migratoryBirds(arr) {
 
     arr.sort(function(a,b){return a-b});
