@@ -1,0 +1,31 @@
+//Logging in from terminal
+sudo -i -u postgres psql;
+//creating database
+create database testDB;
+// checking database
+\l
+//connecting to database
+\c testDB;
+//creating extension uuid
+create extension "uuip-ossp";
+//creating table
+create table students(id uuid primary key not null, name varchar(50) not null, roll_number int);
+//inserting rows
+insert into students(id, name, roll_number)
+values(uuid_generate_v1();, "Raju", 25),
+(uuid_generate_v1();, "Ganesh", 26),
+(uuid_generate_v1();, "Shankar", 27),
+(uuid_generate_v1();, "Rakesh", 28);
+//deleting one row
+delete from students
+where name = "Raju";
+//deleting all rows
+delete from students;
+// deleting table
+drop table students;
+//deleting database
+//*to delete a database we have to switch to another database. 
+\c postgres;
+drop database testDB;
+//finally to exit from postgre shell
+exit
