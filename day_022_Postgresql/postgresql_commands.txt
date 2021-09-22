@@ -1,0 +1,14 @@
+//count rows in a table
+select count(*) from customers;
+// concatenating to rows and giving a alias name
+select first_name || ' ' || last_name as full_name from customers;
+// order by
+select * from customers order by name asc;
+// where and like clause together
+select * from customers where name like '%a%';
+// distinct on
+select distinct on (name) name, email from customers;
+//limit with offset
+select * from customers limit 10 offset 3
+// fetch
+select * from customers offset 5 rows fetch first 5 row only;
