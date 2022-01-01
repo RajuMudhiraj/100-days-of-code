@@ -1,8 +1,9 @@
 
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const cors = require('cors')
-const bodyParser = require('body-parser')
+const cors = require('cors');
+const bodyParser = require('body-parser');
 
 
 // addingg cors middleware to enable cross origin resource sharing
