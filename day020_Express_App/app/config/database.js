@@ -1,16 +1,12 @@
 // configuring dotenv 
-require('dotenv').config();
 
 const { Sequelize } = require('sequelize')
 
+console.log(process.env.DB)
 
-const sequelize = new Sequelize(process.env.DIALECT + "://" + process.env.USR + ":" + process.env.PWD + "@" + process.env.HOST + "/" + process.env.DB, {
-    pool: {
-        max: 5,
-        min: 0,
-        acquire: 30000,
-        idle: 10000
-    },
+
+const sequelize = new Sequelize(process.env._DIALECT + "://" + process.env._USR + ":" + process.env._PWD + "@" + process.env._HOST + "/" + process.env._DB, {
+
     logging: false,
     define: {
         freezeTableName: true

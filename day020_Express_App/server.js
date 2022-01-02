@@ -6,6 +6,11 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 
+// requiring sequelize instance and connect function and connecting to Database
+const { sequelize, connect } = require('./app/config/database')
+connect(sequelize)
+
+
 // addingg cors middleware to enable cross origin resource sharing
 app.use(cors())
 
@@ -19,6 +24,8 @@ app.get('/', (req, res) => {
     res.json({ message: "Welcome to Node.js and Express.js" });
 });
 
+// signUp route
+app.use('/signUp', require('./app/routes/signUp'));
 
 
 // set port, listen for requests
