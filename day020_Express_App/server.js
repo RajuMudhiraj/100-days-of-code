@@ -27,6 +27,9 @@ app.get('/', (req, res) => {
 // signUp route
 app.use('/signUp', require('./app/routes/signUp'));
 
+// Sign in route
+app.use('/signIn', require('./app/routes/signIn'))
+
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
