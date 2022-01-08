@@ -1,4 +1,3 @@
-const bcrypt = require('bcrypt')
 const ToDo = require('../models/ToDo')
 
 const viewToDos = (req, res) => {

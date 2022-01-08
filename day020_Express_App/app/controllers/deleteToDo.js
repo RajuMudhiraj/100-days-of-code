@@ -1,13 +1,12 @@
 const ToDo = require('../models/ToDo')
 
-const addToDo = (req, res) => {
+const deleteToDo = (req, res) => {
 
-    const input = {
-        toDo: req.body.toDo,
-        isDone: req.body.isDone
-    }
 
-    ToDo.create(input)
+
+    ToDo.destroy({
+        where: { id: req.body.id }
+    })
         .then(result => {
 
             res.status(201).json(result)
@@ -19,6 +18,4 @@ const addToDo = (req, res) => {
 
 };
 
-
-
-module.exports = addToDo;
+module.exports = deleteToDo;

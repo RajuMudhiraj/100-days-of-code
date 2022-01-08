@@ -39,6 +39,9 @@ app.use('/viewToDos', require('./app/routes/viewToDos'))
 // Update todo by  Id
 app.use('/updateToDo', require('./app/routes/updateToDo'))
 
+// Delete todo by  Id
+app.use('/deleteToDo', require('./app/routes/deleteToDo'))
+
 
 
 // set port, listen for requests
