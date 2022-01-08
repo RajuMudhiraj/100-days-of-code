@@ -30,12 +30,14 @@ app.use('/signUp', require('./app/routes/signUp'));
 // Sign in route
 app.use('/signIn', require('./app/routes/signIn'))
 
-
 // Add todo
 app.use('/addToDo', require('./app/routes/addToDo'))
 
 // View all todos
 app.use('/viewToDos', require('./app/routes/viewToDos'))
+
+// Update todo by  Id
+app.use('/updateToDo', require('./app/routes/updateToDo'))
 
 
 

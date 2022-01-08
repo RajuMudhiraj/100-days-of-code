@@ -5,7 +5,6 @@ const User = require('../models/User')
 const signIn = (req, res) => {
     User.findOne({ where: { email: req.body.email } })
         .then(result => {
-            console.log(result)
             if (result) {
                 bcrypt.compare(req.body.password, result.dataValues.password)
                     .then(function (response) {

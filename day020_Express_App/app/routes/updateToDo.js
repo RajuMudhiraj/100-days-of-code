@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-// View all todos
-router.get('/', require('../controllers/viewToDos'))
+// Update todo by Id
+router.post('/', require('../controllers/updateToDo'))
 
 
 module.exports = router;
