@@ -2,14 +2,14 @@ const { Sequelize, DataTypes } = require('sequelize')
 const { sequelize } = require('../config/database')
 
 
-const Todos = sequelize.define('Todos', {
+const ToDo = sequelize.define('Todos', {
     // Model attributes are defined here
     id: {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV1,
         primaryKey: true,
     },
-    todo: {
+    toDo: {
         type: DataTypes.STRING,
         allowNull: false,
     },
@@ -19,4 +19,4 @@ const Todos = sequelize.define('Todos', {
     }
 }, { timestamps: false });
 
-module.exports = Todos;
+module.exports = ToDo;

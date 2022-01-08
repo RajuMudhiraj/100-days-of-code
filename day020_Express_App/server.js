@@ -31,6 +31,11 @@ app.use('/signUp', require('./app/routes/signUp'));
 app.use('/signIn', require('./app/routes/signIn'))
 
 
+// Add todo
+app.use('/addToDo', require('./app/routes/addToDo'))
+
+
+
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
