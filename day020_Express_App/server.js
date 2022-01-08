@@ -34,6 +34,9 @@ app.use('/signIn', require('./app/routes/signIn'))
 // Add todo
 app.use('/addToDo', require('./app/routes/addToDo'))
 
+// View all todos
+app.use('/viewToDos', require('./app/routes/viewToDos'))
+
 
 
 // set port, listen for requests
