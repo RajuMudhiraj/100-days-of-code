@@ -1,0 +1,12 @@
+.display-inline{
+    display: inline;
+}
+
+.float-right{
+    float:right;
+}
+
+.header{
+    background-color: rgb(79, 90, 90);
+
+}

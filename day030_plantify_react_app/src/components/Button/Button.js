@@ -1,7 +1,7 @@
 import React from 'react';
-import './SignIn.css';
+import './Button.css';
 
-export default class SignIn extends React.Component {
+export default class Button extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: '' };
@@ -9,8 +9,8 @@ export default class SignIn extends React.Component {
 
   render() {
     return (
-      <div>
-        This is SignIn component
+      <div className={this.props.className}>
+        {this.props.value}
       </div>
     );
   }

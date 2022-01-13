@@ -1,5 +1,6 @@
 import React from 'react';
-import SignIn from '../components/SignIn/SignIn'
+import Header from '../layouts/Header/Header'
+
 
 export default class LandingPage extends React.Component {
   constructor(props) {
@@ -10,8 +11,7 @@ export default class LandingPage extends React.Component {
   render() {
     return (
       <>
-      <SignIn />
-        This is LandingPage layout
+        <Header className='header' />
       </>
     );
   }
