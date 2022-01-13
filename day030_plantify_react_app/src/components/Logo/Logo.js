@@ -11,7 +11,7 @@ export default class Logo extends React.Component {
 
   render() {
     return (
-      <div className='display-inline'>
+      <div className='display-inline logo'>
         <img  className="logo" src={logo} alt="Logo"></img>
       </div>
     );
