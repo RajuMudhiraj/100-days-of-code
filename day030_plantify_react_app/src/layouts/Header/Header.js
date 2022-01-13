@@ -13,8 +13,12 @@ export default class Header extends React.Component {
         return (
             <div className={this.props.className}>
                 <Logo />
-                <Button className='signUpBtn display-inline float-right' value='Sign Up'/>
+
+                <div className='wrapper'>
+                <Button className='signUpBtn display-inline float-right ' value='Sign Up'/>
                 <Button className='signInBtn display-inline float-right' value='Sign In'/>
+                </div>
+
             </div>
         )
     }
