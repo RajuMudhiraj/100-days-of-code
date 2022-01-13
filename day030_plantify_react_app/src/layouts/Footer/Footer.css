@@ -1,8 +1,5 @@
-.wrapper{
-    display: flex;
-}
 
-.header {
+.footer {
     display:flex;
     flex-direction: row;
     align-items: center;

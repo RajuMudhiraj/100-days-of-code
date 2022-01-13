@@ -9,13 +9,13 @@
     width:100px;
     user-select: none;
 }
-
 .signInBtn:hover{
     background-color:rgb(132, 190, 178);
     color:rgb(0,0,0);
     cursor:pointer;
 }
 
+/*----------------------------------------------------------------------------------------------*/
 
 .signUpBtn{
     background-color: rgb(121, 185, 141);
@@ -33,5 +33,26 @@
     color:rgb(0,0,0);
     cursor:pointer;
 }
+
+/*----------------------------------------------------------------------------------------------*/
+
+.plant1TreeBtn{
+    background-color: rgb(202, 174, 96);
+    color:rgb(255,255,255);
+    padding: 5px;
+    text-align: center;
+    border:1px solid black; 
+    border-radius: 5px;
+    margin:5px;
+    width:100px;
+    user-select: none;
+}
+.plant1TreeBtn:hover{
+    background-color:rgb(155, 201, 81);
+    color:rgb(0,0,0);
+    cursor:pointer;
+}
+
+/*----------------------------------------------------------------------------------------------*/
 
 
