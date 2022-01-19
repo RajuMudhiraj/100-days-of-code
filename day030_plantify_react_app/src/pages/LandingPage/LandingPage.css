@@ -1,7 +1,13 @@
 .landingPage{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin:5px;
     background-color: rgb(225, 225, 233);
+    /* list-style: none; */
+}
 
+.outLet{
+    height:5000px;
 }
