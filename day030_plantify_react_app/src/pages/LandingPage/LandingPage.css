@@ -3,11 +3,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin:5px;
+    /* margin:5px; */
     background-color: rgb(225, 225, 233);
     /* list-style: none; */
 }
 
 .outLet{
-    height:5000px;
+    min-height:450px;
+    display: flex;
+    direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

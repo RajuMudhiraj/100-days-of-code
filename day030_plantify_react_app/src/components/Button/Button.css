@@ -9,6 +9,7 @@
     width:100px;
     user-select: none;
     list-style: none;
+    text-decoration: none;
 }
 .signInBtn:hover{
     background-color:rgb(132, 190, 178);

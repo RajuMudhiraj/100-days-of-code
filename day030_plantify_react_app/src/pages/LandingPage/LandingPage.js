@@ -12,8 +12,8 @@ const LandingPage = () => {
           <Link to="/"><Logo /></Link>
         </div>
         <div className="landingPage">
-          <Link to="/signIn"><Button className="signInBtn" value="Sign In" /></Link>
-          <Link to="/signUp"><Button className="signUpBtn" value="Sign Up" /></Link>
+          <Link to="/signIn" style={{textDecoration:'none'}}><Button className="signInBtn"  value="Sign In" /></Link>
+          <Link to="/signUp" style={{textDecoration:'none'}}><Button className="signUpBtn" value="Sign Up" /></Link>
         </div>
       </div>
       <div className="outLet">

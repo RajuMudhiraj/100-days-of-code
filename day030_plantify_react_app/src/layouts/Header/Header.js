@@ -15,8 +15,8 @@ export default class Header extends React.Component {
                 <Logo />
 
                 <div className='wrapper'>
-                <Button className='signInBtn display-inline float-right' value='Sign In'/>
-                <Button className='signUpBtn display-inline float-right ' value='Sign Up'/>
+                <Button className='' value='Sign In'/>
+                <Button className="" value='Sign Up'/>
                 </div>
 
             </div>

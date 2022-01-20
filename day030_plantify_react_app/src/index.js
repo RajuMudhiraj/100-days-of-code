@@ -8,6 +8,8 @@ import Header from './layouts/Header/Header';
 import Body from './layouts/Body/Body';
 import Footer from './layouts/Footer/Footer';
 import Button from './components/Button/Button';
+import SignUp from "./components/SignUp/SignUp";
+import SignIn from "./components/SignIn/SignIn";
 
 
 export default function App() {
@@ -16,8 +18,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<LandingPage className="landingPage"/>}>
           <Route index element={<Button className="plant1TreeBtn" value="Plant1Tree" />} />
-          <Route path="signIn" element={<Button className='signInBtn' value="Sign In" />} />
-          <Route path="signUp" element={<Button className='signUpBtn' value="Sign Up" />} />
+          <Route path="signIn" element={<SignIn />} />
+          <Route path="signUp" element={<SignUp />} />
         </Route>
       </Routes>
     </BrowserRouter>
