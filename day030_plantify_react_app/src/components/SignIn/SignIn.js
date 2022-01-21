@@ -6,7 +6,7 @@ export default class SignIn extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { email: '', password: "" }
+        this.state = { email: '', password: "", message: "" }
 
         this.handleEmailInput = this.handleEmailInput.bind(this);
         this.handlePasswordInput = this.handlePasswordInput.bind(this);
@@ -22,16 +22,25 @@ export default class SignIn extends React.Component {
         this.setState({ password: e.target.value })
     }
 
-    async handleSubmit() {
+    async handleSubmit(e) {
+        e.preventDefault();
+
         const { email, password } = this.state;
         try {
-            const response = await axios.get('https://plant1tree.herokuapp.com/');
-            alert(response.data)
-           console.log(response.data);
-        } catch (err) {
-          console.log(err)
-          alert(err)
+            const response = await axios.post('https://plant1tree.herokuapp.com/signIn/', { email, password })
 
+            if (response.status >= 200 && response.status < 300) {
+                sessionStorage.setItem("token", `Bearer ${response.data.token}`)
+                this.setState({
+                    message:"Auth success!"
+                })
+            }
+        }
+        catch (err) {
+            this.setState({
+                message:"Auth failed."
+            })
+            console.log(err)
         }
     }
 
@@ -43,7 +52,7 @@ export default class SignIn extends React.Component {
                         className='label'
                         htmlFor='email'
                     >
-                    User Name:
+                        User Name:
                     </label>
                     <input
                         id="email"
@@ -58,7 +67,7 @@ export default class SignIn extends React.Component {
                         className='label'
                         htmlFor='password'
                     >
-                    Password:
+                        Password:
                     </label>
                     <input
                         id="password"
@@ -77,9 +86,10 @@ export default class SignIn extends React.Component {
                         type="submit"
                         style={{ fontSize: '1.2rem', padding: '5px' }}
                     >
-                    Sign In
+                        Sign In
                     </button>
                 </form>
+                <p>{this.state.message}</p>
             </div>
         )
     }
