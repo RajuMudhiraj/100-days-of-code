@@ -31,10 +31,10 @@ export default class SignIn extends React.Component {
 
             if (response.status >= 200 && response.status < 300) {
                 sessionStorage.setItem("token", `Bearer ${response.data.token}`)
-                // this.setState({
-                //     message:"Auth success!"
-                // })
-                history.push('/UserHome')
+                this.setState({
+                    message:"Auth success!"
+                })
+                // history.push('/UserHome')
             }
         }
         catch (err) {
