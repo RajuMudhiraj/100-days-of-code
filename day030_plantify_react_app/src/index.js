@@ -3,20 +3,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import LandingPage from './pages/LandingPage/LandingPage';
-import Logo from './components/Logo/Logo';
-import Header from './layouts/Header/Header';
-import Body from './layouts/Body/Body';
-import Footer from './layouts/Footer/Footer';
 import Button from './components/Button/Button';
 import SignUp from "./components/SignUp/SignUp";
 import SignIn from "./components/SignIn/SignIn";
 
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingPage className="landingPage"/>}>
+        <Route path="/" element={<LandingPage className="landingPage" />}>
           <Route index element={<Button className="plant1TreeBtn" value="Plant1Tree" />} />
           <Route path="signIn" element={<SignIn />} />
           <Route path="signUp" element={<SignUp />} />

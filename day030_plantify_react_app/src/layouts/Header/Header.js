@@ -3,15 +3,15 @@ import './Header.css'
 import Button from '../../components/Button/Button'
 import Logo from '../../components/Logo/Logo'
 
-export default class Header extends React.Component {
-    constructor(props) {
-        super(props);
+export default function Header(props) {
+    // constructor(props) {
+    //     super(props);
 
-    }
+    // }
 
-    render() {
+    // render() {
         return (
-            <div className={this.props.className}>
+            <div className={props.className}>
                 <Logo />
 
                 <div className='wrapper'>
@@ -23,4 +23,4 @@ export default class Header extends React.Component {
         )
     }
 
-}
+// }

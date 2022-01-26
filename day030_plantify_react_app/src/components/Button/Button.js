@@ -1,17 +1,11 @@
 import React from 'react';
 import './Button.css';
 
-export default class Button extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { value: '' };
-  }
+export default function Button(props){
 
-  render() {
     return (
-      <div className={this.props.className}>
-        {this.props.value}
+      <div className={props.className}>
+        {props.value}
       </div>
     );
   }
-}

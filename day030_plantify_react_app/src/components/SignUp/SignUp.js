@@ -1,13 +1,9 @@
 import React from 'react'
 
-export default class SignUp extends React.Component {
-
-    render() {
+export default function SignUp (props) {
 
         return (
-
             <h1> This is Sign up page</h1>
 
         )
-    }
 }
