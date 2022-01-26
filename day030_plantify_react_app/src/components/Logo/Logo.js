@@ -1,13 +1,24 @@
 import React from 'react';
-import './Logo.css';
 import logo from '../../assets/Images/logo.jpg'
+import styled from 'styled-components';
+
+const ImgLink = styled.img.attrs(({ src }) => ({
+  src:  logo 
+}))`
+height: 100px;
+width:100px;
+margin-left: 10px;
+border-radius: 50%;
+
+&:hover {
+  cursor:pointer;
+}
+`
 
 
 export default function Logo (props) {
 
     return (
-      <div className='display-inline logo'>
-        <img  className="logo" src={logo} alt="Logo"></img>
-      </div>
+      <ImgLink />
     );
   }
