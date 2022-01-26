@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage className="landingPage" />}>
-          <Route index element={<Button className="plant1TreeBtn" value="Plant1Tree" />} />
+          <Route index element={<Button bgHover="rgb(88, 182, 119)" bgColor="rgb(168, 147, 121)" value="Plant1Tree" />} />
           <Route path="signIn" element={<SignIn />} />
           <Route path="signUp" element={<SignUp />} />
         </Route>

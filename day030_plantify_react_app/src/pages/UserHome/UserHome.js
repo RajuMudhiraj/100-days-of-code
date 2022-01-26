@@ -12,7 +12,7 @@ const UserHome = () => {
           <Link to="/"><Logo /></Link>
         </div>
         <div className="userHome">
-          <Link to="/LandingPage" style={{textDecoration:'none'}}><Button className="signOutBtn"  value="Sign Out" /></Link>
+          <Link to="/LandingPage" style={{textDecoration:'none'}}><Button className="signOutBtn" text="test3" value="Sign Out" /></Link>
         </div>
       </div>
       <div className="outLet">

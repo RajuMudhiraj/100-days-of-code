@@ -12,8 +12,8 @@ const LandingPage = () => {
           <Link to="/"><Logo /></Link>
         </div>
         <div className="landingPage">
-          <Link to="/signIn" style={{textDecoration:'none'}}><Button className="signInBtn"  value="Sign In" /></Link>
-          <Link to="/signUp" style={{textDecoration:'none'}}><Button className="signUpBtn" value="Sign Up" /></Link>
+          <Link to="/signIn" ><Button bgHover="rgb(90, 130, 100)" bgColor="rgb(91, 155, 125)" value="Sign In" /></Link>
+          <Link to="/signUp" ><Button bgHover="rgb(130, 119, 175)" bgColor="rgb(150, 142, 182)" value="Sign Up" /></Link>
         </div>
       </div>
       <div className="outLet">
