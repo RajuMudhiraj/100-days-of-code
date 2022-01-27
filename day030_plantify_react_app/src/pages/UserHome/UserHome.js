@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
-import Logo from "../../components/Logo/Logo";
-import Button from "../../components/Button/Button";
+import Logo from "../../components/Logo";
+import Button from "../../components/Button";
 import Footer from "../../layouts/Footer/Footer";
 import './UserHome.css'
 

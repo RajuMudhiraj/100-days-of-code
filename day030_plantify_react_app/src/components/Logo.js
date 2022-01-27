@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/Images/logo.jpg'
+import logo from '../assets/Images/logo.jpg'
 import styled from 'styled-components';
 
 const ImgLink = styled.img.attrs(({ src }) => ({

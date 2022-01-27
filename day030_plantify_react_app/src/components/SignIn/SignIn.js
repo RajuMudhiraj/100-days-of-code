@@ -2,19 +2,22 @@ import React, { useState } from 'react'
 import './SignIn.css'
 import axios from 'axios'
 
+
 export default function SignIn(props) {
 
+    // -------------------------------- Javascript -------------------------------------
     let [email, setEmail] = useState("")
     let [password, setPassword] = useState("")
     let [message, setMessage] = useState("")
 
-
     let handleEmailInput = (e) => {
         setEmail(e.target.value);
+        console.log(email)
     }
 
     let handlePasswordInput = (e) => {
         setPassword(e.target.value);
+        console.log(password)
     }
 
     let handleSubmit = async (e) => {
@@ -27,16 +30,19 @@ export default function SignIn(props) {
             if (response.status >= 200 && response.status < 300) {
                 sessionStorage.setItem("token", `Bearer ${response.data.token}`)
                 setMessage("Auth success!")
+                console.log(message)
 
                 // history.push('/UserHome')
             }
         }
         catch (err) {
-            setMessage("Auth success!")
-            console.log(err)
+            setMessage("Auth failed")
+            console.log(message)
         }
     }
 
+
+    // -------------------------------- JSX -----------------------------------------
     return (
         <div>
             <form onSubmit={handleSubmit}>

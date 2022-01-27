@@ -3,9 +3,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import LandingPage from './pages/LandingPage/LandingPage';
-import Button from './components/Button/Button';
+import Button from './components/Button';
 import SignUp from "./components/SignUp/SignUp";
 import SignIn from "./components/SignIn/SignIn";
+import LoginForm from './layouts/LoginForm'
+import Input from './components/Input'
+import LabelText from './components/LabelText'
+import FormContainer from './components/FormContainer'
+
 
 
 function App() {
@@ -13,8 +18,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage className="landingPage" />}>
-          <Route index element={<Button bgHover="rgb(88, 182, 119)" bgColor="rgb(168, 147, 121)" value="Plant1Tree" />} />
-          <Route path="signIn" element={<SignIn />} />
+          <Route index element={<Button bgHover="rgb(88, 182, 119)" bgColor="rgb(168, 147, 121)" innerText="Plant1Tree" />} />
+          <Route path="signIn" element={<FormContainer />} />
           <Route path="signUp" element={<SignUp />} />
         </Route>
       </Routes>

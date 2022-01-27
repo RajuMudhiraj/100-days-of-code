@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import styled from 'styled-components';
 
 const Btn = styled.button`
@@ -13,7 +13,6 @@ width:100px;
 user-select: none;
 list-style: none;
 text-decoration: none;
-height:50px;
 font-size:1rem;
 
 &:hover {
@@ -25,7 +24,7 @@ font-size:1rem;
 const Button = (props) => {
  return (
     <Btn bgColor={props.bgColor} bgHover={props.bgHover}>
-      {props.value}
+      {props.innerText}
     </Btn>
   );
 }
