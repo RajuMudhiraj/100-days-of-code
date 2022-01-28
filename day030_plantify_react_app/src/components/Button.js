@@ -22,9 +22,10 @@ font-size:1rem;
 }
 `
 const Button = (props) => {
+
  return (
-    <Btn bgColor={props.bgColor} bgHover={props.bgHover}>
-      {props.innerText}
+    <Btn bgColor={props.bgColor} bgHover={props.bgHover} onClick={props.onClick}>
+      {props.innerText} 
     </Btn>
   );
 }

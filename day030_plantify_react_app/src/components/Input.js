@@ -10,8 +10,11 @@ height:30px;
 `
 
 const Input = (props) => {
+
+
+
     return (
-        <StyledInput type={props.type} placeholder={`${props.type.toUpperCase()}....`} />
+        <StyledInput onChange={props.onChange} type={props.type} placeholder={`${props.type.toUpperCase()}....`} />
     )
 }
 

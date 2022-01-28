@@ -7,7 +7,7 @@ import './LandingPage.css'
 const LandingPage = () => {
   return (
     <>
-      < div className="landingPage">
+      <div className="landingPage">
         <div>
           <Link to="/"><Logo /></Link>
         </div>
@@ -17,7 +17,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="outLet">
-        <Outlet />
+        <Outlet height="800px"/>
       </div>
       <Footer />
     </>

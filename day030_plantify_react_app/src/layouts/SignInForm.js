@@ -1,11 +1,10 @@
 //-------------------- Imports -------------------------------------------
-
 import React, { useState } from 'react'
 import axios from 'axios'
 import styled from "styled-components"
-import Input from './Input'
-import LabelText from './LabelText'
-import Button from './Button'
+import Input from '../components/Input'
+import LabelText from '../components/LabelText'
+import Button from '../components/Button'
 
 
 // --------------------- Styled components--------------------------------
@@ -20,7 +19,7 @@ flex-direction:row;
 margin:5px;
 `
 
-const FormContainer = (props) => {
+const SignInForm = (props) => {
     // -------------------------------- Javascript -------------------------------------
     let [email, setEmail] = useState("")
     let [password, setPassword] = useState("")
@@ -28,12 +27,10 @@ const FormContainer = (props) => {
 
     let handleEmailInput = (e) => {
         setEmail(e.target.value);
-        console.log(email)
     }
 
     let handlePasswordInput = (e) => {
         setPassword(e.target.value);
-        console.log(password)
     }
 
     let handleSubmit = async (e) => {
@@ -45,13 +42,12 @@ const FormContainer = (props) => {
             if (response.status >= 200 && response.status < 300) {
                 sessionStorage.setItem("token", `Bearer ${response.data.token}`)
                 setMessage("Auth success!")
-                console.log(message)
 
             }
+            
         }
         catch (err) {
             setMessage("Auth failed")
-            console.log(message)
         }
     }
 
@@ -71,13 +67,12 @@ const FormContainer = (props) => {
                     <LabelText ></LabelText>
                     <Button innerText="Sign In" bgColor="green" bgHover="lightgreen" onClick={handleSubmit} />
                 </Div>
-                {/* <p>{message}</p> */}
+                <p>{message}</p>
             </StyledFormContainer>
 
         </>
-
     )
 }
 
-export default FormContainer;
+export default SignInForm;
 
