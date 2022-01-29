@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './index.css';
-import LandingPage from './pages/LandingPage/LandingPage';
+import LandingPage from './pages/LandingPage';
 import Button from './components/Button';
 import SignUp from "./components/SignUp";
 import SignInForm from './layouts/SignInForm'
@@ -9,7 +8,6 @@ import styled from "styled-components";
 
 // ------------------- Styled Components --------------------------------
 const StyledApp = styled.div`
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -21,7 +19,7 @@ const StyledApp = styled.div`
 function App() {
     return (
         <StyledApp>
-            <BrowserRouter>
+        <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<LandingPage className="landingPage" />}>
                         <Route index element={<Button bgHover="rgb(88, 182, 119)" bgColor="rgb(168, 147, 121)" innerText="Plant1Tree" />} />
