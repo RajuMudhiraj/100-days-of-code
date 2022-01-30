@@ -1,8 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LandingPage from './pages/LandingPage';
 import Button from './components/Button';
 import SignUp from "./components/SignUp";
 import SignInForm from './layouts/SignInForm'
+import UserHome from './pages/UserHome'
+import SignOut from './components/SignOut'
+
 import styled from "styled-components";
 
 
@@ -19,15 +22,24 @@ const StyledApp = styled.div`
 function App() {
     return (
         <StyledApp>
-        <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<LandingPage className="landingPage" />}>
-                        <Route index element={<Button bgHover="rgb(88, 182, 119)" bgColor="rgb(168, 147, 121)" innerText="Plant1Tree" />} />
-                        <Route path="signIn" element={<SignInForm />} />
-                        <Route path="signUp" element={<SignUp />} />
+            <Routes>
+                <Route path="/" element={<LandingPage />}>
+                    <Route index element={<Button bgHover="rgb(88, 182, 119)" bgColor="rgb(168, 147, 121)" innerText="Plant1Tree" />} />
+                    <Route path="signIn" element={<SignInForm />} />
+                    <Route path="signUp" element={<SignUp />} />
+                    <Route path="user" element={<UserHome />}>
+                    <Route index element={<Button bgHover="rgb(88, 182, 119)" bgColor="rgb(168, 147, 121)" innerText="Plant1Tree" />} />
+                        <Route path="signOut" element={<SignOut />} />
+
                     </Route>
-                </Routes>
-            </BrowserRouter>
+
+                </Route>
+                {/* <Route path="/user" element={<UserHome />}>
+
+                    <Route path="signOut" element={<SignOut />} />
+                </Route> */}
+            </Routes>
+
         </StyledApp>
     );
 }

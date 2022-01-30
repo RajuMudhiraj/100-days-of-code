@@ -5,6 +5,8 @@ import styled from "styled-components"
 import Input from '../components/Input'
 import LabelText from '../components/LabelText'
 import Button from '../components/Button'
+import {useNavigate, useLocation} from 'react-router-dom'
+
 
 
 // --------------------- Styled components--------------------------------
@@ -24,6 +26,8 @@ const SignInForm = (props) => {
     let [email, setEmail] = useState("")
     let [password, setPassword] = useState("")
     let [message, setMessage] = useState("")
+    const {state} = useLocation();
+    const navigate = useNavigate();
 
     let handleEmailInput = (e) => {
         setEmail(e.target.value);
@@ -42,6 +46,8 @@ const SignInForm = (props) => {
             if (response.status >= 200 && response.status < 300) {
                 sessionStorage.setItem("token", `Bearer ${response.data.token}`)
                 setMessage("Auth success!")
+                navigate(state?.path || "/user");
+
 
             }
 

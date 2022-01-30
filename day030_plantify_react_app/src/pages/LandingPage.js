@@ -12,7 +12,7 @@ const LandingPage = () => {
       </>} /></>}>
 
       </FlexBox>
-      <div style={{display:"flex", direction:"row", justifyContent:"center", alignItems:"center", minHeight:"400px"}}>
+      <div style={{display:"flex", direction:"row", justifyContent:"center", alignItems:"center", minHeight:"450px"}}>
         <Outlet />
       </div>
 
