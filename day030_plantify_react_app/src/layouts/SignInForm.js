@@ -26,8 +26,8 @@ const SignInForm = (props) => {
     let [email, setEmail] = useState("")
     let [password, setPassword] = useState("")
     let [message, setMessage] = useState("")
-    const {state} = useLocation();
     const navigate = useNavigate();
+    const {state} = useLocation();
 
     let handleEmailInput = (e) => {
         setEmail(e.target.value);
@@ -63,7 +63,7 @@ const SignInForm = (props) => {
             <StyledFormContainer>
                 <Div>
                     <LabelText text="Email :"></LabelText>
-                    <Input type="email" onChange={handleEmailInput}></Input>
+                    <Input type="email" onChange={handleEmailInput} fontSize="1em"></Input>
                 </Div>
                 <Div>
                     <LabelText text="Password :"></LabelText>
