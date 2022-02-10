@@ -6,7 +6,7 @@ import Input from '../components/Input'
 import LabelText from '../components/LabelText'
 import Button from '../components/Button'
 import { useNavigate, useLocation } from 'react-router-dom';
-import useAuth from '../hooks/useAuth'
+// import useAuth from '../hooks/useAuth'
 import axios from '../api/axios';
 
 
@@ -31,7 +31,7 @@ const SignInForm = (props) => {
     let [password, setPassword] = useState("")
     let [message, setMessage] = useState("")
 
-    const { setAuth } = useAuth();
+    // const { setAuth } = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/user";
@@ -58,19 +58,18 @@ const SignInForm = (props) => {
             const roles = [2001, 1984, 5150];
             const accessToken = response.data.token;
               
-            setMessage("Auth success!")
-            console.log(message, response)
+            setMessage("Auth success!");
+            
+            sessionStorage.setItem("token", `Bearer ${accessToken}`);
+            sessionStorage.setItem("user", user);
+            sessionStorage.setItem("roles", roles);
 
+            // console.log(sessionStorage.getItem("roles"));
             
-            sessionStorage.setItem("token", `Bearer ${response.data.token}`)
-            
-            setAuth({ user, pwd, roles, accessToken});
+            // setAuth({ user, pwd, roles, accessToken});
             setEmail('');
             setPassword('');
             navigate(from, { replace: true });
-
-
-
         }
         catch (err) {
             setMessage("Auth failed")
