@@ -7,8 +7,6 @@ class Node {
     }
 }
 
-
-
 /* Given a binary tree, print its nodes in postorder */
 
 function printPostorder(node) {
@@ -55,11 +53,6 @@ function printPreorder(node) {
     printPreorder(node.right);
 
 }
-
-
-
-// Driver method
-
 
 let root = new Node(1);
 root.left = new Node(2);
